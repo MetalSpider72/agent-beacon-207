@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+
+# Editor and local environment
+.idea/
+.vscode/
+*.swp
+*.swo
+.env
+.env.*
+
+# Go build outputs
+*.test
+coverage.out
+coverage.html
+.gocache/
+.tmp/
+
+# Beacon CLI binaries and release output
+cli/beacon/beacon
+cli/beacon/beacon-*
+cli/beacon/dist/
+dist/
+
+# Hook helper binaries
+cli/beacon-hooks/beacon-hooks
+cli/beacon-hooks/beacon-hooks-*
+cli/beacon-hooks/*.exe
+
+# Local endpoint logs/config generated during development
+.beacon/
+*.jsonl
+!cli/beacon/internal/endpoint/wazuh/pack/sample-event.jsonl
+!cli/beacon/internal/endpoint/sumo/pack/sample-event.jsonl
+!cli/beacon/internal/endpoint/rapid7/pack/sample-event.jsonl
+!cli/beacon/internal/endpoint/s3/pack/sample-event.jsonl
+!cli/beacon/internal/endpoint/cloudwatch/pack/sample-event.jsonl
+!cli/beacon/internal/endpoint/gcs/pack/sample-event.jsonl
+!cli/beacon/internal/endpoint/sentinel/pack/sample-event.jsonl
+!cli/beacon/internal/endpoint/gcs/pack/sample-event.jsonl
+*.log
+
+# Collector builder outputs
+collector-builder/dist/
+
